@@ -1,6 +1,6 @@
 import validators
 
-v = validators.email('ka1RieZzz@ou.ru')
+v = validators.email('kz@ou.ru')
 
 if v:
     print('[+] Ok\nThe email address is valid.')
