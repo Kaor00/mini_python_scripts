@@ -1,7 +1,7 @@
 from zipfile import ZipFile
 
 # Для примера имени файла
-file_name = '/home/kaor/Загрузки/Telegram Desktop/софт_из_видео.zip'
+file_name = '/полный путь.zip'
 
 with ZipFile(file_name, 'r') as zip_file:
     print('Zip all files...')
