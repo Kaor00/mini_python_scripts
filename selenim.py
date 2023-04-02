@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
 
-s = Service(executable_path='/home/kaor/PycharmProjects/Qwark/chromedriver_linux64/chromedriver')
+s = Service(executable_path='/hполный путь')
 driver = webdriver.Chrome(service=s)
 
 options = webdriver.ChromeOptions()
