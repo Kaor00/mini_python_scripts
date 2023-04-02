@@ -1,6 +1,6 @@
 import qrcode
 
-url = 'https://t.me/Ka_acustic'
+url = ''
 
 img = qrcode.make(url)
 img.save("AAA.png")
