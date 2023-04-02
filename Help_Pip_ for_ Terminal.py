@@ -24,4 +24,4 @@
 
 # Пример команды для исправления кода по стандарту pep8.
 # До файла нужно указывать полный путь.
-# autopep8 --in-place --aggressive --aggressive /home/kaor/PycharmProjects/Qwark/other/genetator.py
+# autopep8 --in-place --aggressive --aggressive /полный путь/genetator.py
