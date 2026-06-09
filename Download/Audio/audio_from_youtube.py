@@ -6,9 +6,10 @@ def download_audio(url: str) -> None:
         "format": "bestaudio/best",
         "outtmpl": "%(title)s.%(ext)s",
         "quiet": True,
-        'socket_timeout': 60,
-        'retries': 10,
-        'continuedl': True,
+        "socket_timeout": 60,
+        "retries": 10,
+        "continued": True,
+        "javascript_runtimes": ["node"],
     }
 
     with YoutubeDL(opts) as ydl:
@@ -16,4 +17,4 @@ def download_audio(url: str) -> None:
 
 
 if __name__ == "__main__":
-    download_audio("https://www.youtube.com/watch?v=Rm-4JUivLcE&t=1099s")
+    download_audio("https://youtube")

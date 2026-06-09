@@ -1,10 +1,10 @@
-import datetime
+from datetime import datetime as _dt
 
-dt_now = datetime.datetime.now()
+dt_now = _dt.now()
 print(dt_now)
 
-cur_data = datetime.datetime.today()
+cur_data = _dt.today()
 print(cur_data)
 
-cur_time = datetime.datetime.now().time()
+cur_time = _dt.now().time()
 print(cur_time)
