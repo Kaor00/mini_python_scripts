@@ -1,18 +1,31 @@
 from yt_dlp import YoutubeDL
 
+
 def download_video(url: str) -> None:
     opts = {
-        "format": "best[ext=mp4]/best",
-        "outtmpl": "%(title)s.%(ext)s",
+        "format": "best",
+        "outtmpl": r"D:\VIDEO\MUSIC\%(title)s.%(ext)s",
         "quiet": True,
-        'socket_timeout': 60,
-        'retries': 10,
-        'continuedl': True,
-        'merge_output_format': 'mp4',
+        "socket_timeout": 60,
+        "retries": 10,
+        "continued": True,
+        "--js-runtimes": [r"node:C:\Program Files\nodejs\node.exe"],
     }
 
     with YoutubeDL(opts) as ydl:
         ydl.download([url])
 
+
 if __name__ == "__main__":
-    download_video("https://youtu.be/mg9Kq1YaENI?si=gIrDfyqwNlUnSp8B")
+    lst = (
+        ["https://www.youtube.com/watch?v=PBwECcU8Dag", "1"],
+        # ["", ""],
+    )
+    for u, name in lst:
+        try:
+            print(f"{name} started")
+            download_video(u)
+        except BaseException as BE:
+            print(f"{name} break. {BE}")
+            continue
+    print("end cycle")

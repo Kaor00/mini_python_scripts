@@ -10,6 +10,7 @@ def download_audio(url: str) -> None:
         "retries": 10,
         "continued": True,
         "javascript_runtimes": ["node"],
+
     }
 
     with YoutubeDL(opts) as ydl:
